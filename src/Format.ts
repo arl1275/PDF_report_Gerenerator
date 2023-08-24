@@ -7,4 +7,7 @@ export function DateCylce(){
     return date;
 }   
 
+export function Table_format_void_default(){//create the table to pdf, but table is void.
+    
 
+}
