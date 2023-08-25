@@ -1,12 +1,8 @@
-import { DateCylce } from "./Format";
-const fs = require("fs")
-const PDFDocument = require("pdfkit-table");//pdf and table
+const pdfdoc = require("./Table")
+let PdfDocument = require('pdfkit');
+const fs = require("fs");
 
-const doc = new PDFDocument();
-const name_cycle = DateCylce();
-doc.pipe(fs.createWriteStream( name_cycle + '.pdf'));
-doc.addPage().fontSize(25).text('Here is some vector graphics...', 100, 100);
-
-// Draw a triangle
-doc.save();
-doc.end();
+const pdf = new PdfDocument();
+pdf.addPage(pdfdoc);
+pdf.pipe(fs.createWriteStream("output.pdf"));
+pdf.end();
