@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@types/node": "^20.5.6",
+    "pdfkit-table-ts": "^0.0.14",
+    "ts-node": "^10.9.1"
+  }
+}
