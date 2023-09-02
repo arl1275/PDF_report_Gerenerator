@@ -1,9 +1,12 @@
-//obtener fecha y hora
+//get dates and names
 
-export function DateCylce(){
-    let d = new Date();
-    const date ="Resumen_Ciclicos_GT"+"_" + d.getDay() +"_"+ d.getMonth() +"_"+ d.getFullYear();
-    date.toString();
-    return date;
-}   
+export function get_name(){
+    let date = new Date();
+    let generic_name = "Resumen_Diario_CiclicosGT_"
 
+    let name = generic_name + date.getDay().toString() + "_" + date.getMonth().toString() + "_" 
+    + date.getFullYear().toString()
+
+    //return the name
+    return name;
+}
