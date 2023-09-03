@@ -1,5 +1,11 @@
-//get dates and names
+//Headers formats
+export let titles = [
+    "SUCURSALES", "Teoricos", "Escaneados", "Diferencia (+)", "Diferencia (-)"
+    , "Teoricos", "Escaneados", "Diferencia (+)", "Diferencia (-)",
+    , "Teoricos", "Escaneados", "AJUSTES (+)", "AJUSTES (-)"
+]
 
+//get dates and names
 export function get_name(){
     let date = new Date();
     let generic_name = "Resumen_Diario_CiclicosGT_"
